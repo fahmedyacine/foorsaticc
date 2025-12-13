@@ -1,0 +1,251 @@
+Thématique 1 : Intelligence Artificielle & Automatisation
+
+INFORMATIONS GÉNÉRALES
+
+Date : Du 11/12/2025 au 13/12/2025
+
+Lieu : La librairie du pôle technologique de Sidi Abdellah, Algérie
+
+CONTEXTE & ENJEUX
+
+Le Front Office reçoit quotidiennement des demandes variées de clients :
+entreprises publiques, privées, administrations, établissements
+éducatifs, etc. Pour répondre efficacement, les agents doivent consulter
+une multitude d'offres commerciales et de conventions signées avec les
+partenaires. Ce processus est souvent lent, manuel et dispersé, générant
+des erreurs ou des retards dans le traitement des demandes.
+
+Afin d'améliorer la qualité du service et d'optimiser le travail des
+employés, ce hackathon vise à créer un assistant intelligent capable de
+comprendre les besoins d'un client et de proposer instantanément les
+offres correspondantes.
+
+OBJECTIF DU HACKATHON
+
+Créer une plateforme intelligente tout-en-un intégrant un Chatbot IA
+Spécialisé (Composant OBLIGATOIRE).
+
+⚠️ Le chatbot est le cœur du projet - sans chatbot fonctionnel, le
+projet ne sera pas éligible.
+
+Le projet nécessite une pipeline automatisée qui supporte ce format JSON d’entrée et de sortie pour assurer une évaluation fiable et standardisée.
+
+ 1. Format d’entrée (questions)
+
+Ce JSON contient :
+
+le nom de l’équipe, 
+
+une ou plusieurs catégories (ID categorie), 
+
+pour chaque catégorie, une liste de questions identifiées par leur ID question. 
+
+{
+
+ "equipe": "NomDeLEquipe",
+
+ "question": {
+
+ "ID categorie": {
+
+ "ID question": "question"
+
+ } } }
+
+ Exemple concret :
+
+{
+
+ "equipe": "IA_Team",
+
+ "question": {
+
+ "categorie_01": {
+
+ "1": "Donnez une description du projet",
+
+ "2": "Quelles sont les technologies utilisées ?"
+
+ }
+
+ }
+
+}
+
+ 2. Format de sortie (réponses)
+
+Après traitement par le modèle, la pipeline produit un JSON contenant :
+
+le nom de l’équipe, 
+
+le nom de l’offre pour laquelle les réponses sont générées, 
+
+le dictionnaire des réponses indexées par ID question. 
+
+{
+
+ "equipe": "NomDeLEquipe",
+
+ "reponses": {
+
+ "Nom de l'offre": {
+
+ "ID question": "Réponse"
+
+ }
+
+ }
+
+}
+
+ Exemple concret :
+
+{
+
+ "equipe": "IA_Team",
+
+ "reponses": {
+
+ "Offre_01": {
+
+ "1": "Le projet vise à développer une solution innovante…",
+
+ "2": "Les technologies utilisées incluent Python, FastAPI, et un modèle IA…"
+
+ }
+
+ }
+
+}
+
+DÉFIS À RELEVER
+
+Phase 1 : Chatbot Intelligent (OBLIGATOIRE)
+
+Fonctionnalités minimales :
+
+-   Recherche conversationnelle en langage naturel
+
+-   Recommandation automatique basée sur le profil client
+
+-   Résumer les offres et conventions et aider l'agent AT à retrouver
+    les étapes d'utilisation de NGBSS
+
+-   Support multilingue (Arabe / Français) – souhaité
+
+Critères de succès :
+
+-   Taux de compréhension > 85%
+
+-   Temps de réponse < 3 secondes
+
+-   Pertinence des recommandations validée par tests utilisateurs
+
+Phase 2 : Système de Recherche Avancé
+
+Interface de recherche permettant :
+
+-   Recherche par mots-clés (nom d'offre, partenaire, secteur)
+
+-   Filtres dynamiques : secteur d'activité, partenaire spécifique,
+    période de validité, type d'offre
+
+-   Consultation rapide des conventions signées
+
+Phase 3 : Intégration des Données
+
+Sources à intégrer :
+
+-   Les offres commerciales et conventions signées
+
+-   Les données des entreprises partenaires
+
+-   Conditions, restrictions, dates, catégories (données PDF non
+    structurées)
+
+Traitement attendu :
+
+-   Nettoyage et structuration des données
+
+-   Création de liens entre offres et conventions
+
+-   Annotation et catégorisation automatique
+
+Phase 4 : Interface Web Front Office
+
+Fonctionnalités de l'interface :
+
+-   Espace Chatbot : zone de conversation intuitive, suggestions de
+    questions fréquentes, affichage progressif des réponses
+
+-   Affichage des résultats : cartes visuelles des offres recommandées,
+    téléchargement des conventions (PDF)
+
+-   Possibilité de télécharger le document PDF source de l'information
+
+-   Prévisualisation des fiches offres et historique des recherches
+
+LIVRABLES ATTENDUS
+
+Code Source et Documentation
+
+-   Chatbot IA Fonctionnel
+
+-   Interface Web Opérationnelle : Application déployée, interface
+    responsive et accessible
+
+-   Système de Recherche : moteur de recherche opérationnel, filtres
+    fonctionnels et affichage des résultats pertinents
+
+RESSOURCES FOURNIES
+
+Données d'entraînement
+
+Vous disposez de cinq dossiers de données :
+
+-   Offres en arabe et Offres : ensemble des offres commerciales
+    proposées par Algérie Télécom
+
+-   Guide NGBSS : guide opérationnel utilisé par les agents AT pour
+    réaliser différentes actions
+
+-   Dépôt vente : produits, services et solutions
+
+-   Conventions : conventions signées entre Algérie Télécom et les
+    entreprises partenaires
+
+Note : L'ensemble de ces données est fourni sous forme de documents PDF
+ou DOC non structurés.
+
+Support technique
+
+-   Mentors disponibles pendant le hackathon
+
+-   Documentation technique
+
+Bonus spécial : Le dossier NGBSS contient des textes et de nombreuses
+images illustrant les étapes des opérations. Un bonus sera accordé aux
+équipes qui exploitent efficacement l'OCR pour extraire les informations
+présentes uniquement dans ces images.
+
+RÈGLEMENT
+
+-   Originalité : Le code doit être développé pendant le hackathon
+
+-   Open Source : Librairies open source autorisées et encouragées
+
+-   Fair Play : Plagiat interdit
+
+-   Sécurité : Respecter les bonnes pratiques de sécurité
+
+😊 BONNE CHANCE À TOUS LES PARTICIPANTS !
+
+Ce hackathon est une opportunité unique de créer un outil à fort impact
+métier tout en développant vos compétences en IA. Soyez créatifs,
+collaborez, et surtout : amusez-vous !
+
+Que le meilleur projet gagne ! 🏆
+
+Document officiel - Version 2.0
+
+Date de publication : 11/12/2025 | Dernière mise à jour : 07/12/2025
