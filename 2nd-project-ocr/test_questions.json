@@ -1,0 +1,30 @@
+{
+  "equipe": "Test_Team",
+  "question": {
+    "categorie_01": {
+      "1": "Quels sont les services inclus dans cette convention?",
+      "2": "ما هي الخدمات المشمولة في هذه الاتفاقية؟",
+      "3": "Qui est concerné par cette convention?",
+      "4": "من هو المعني بهذه الاتفاقية؟"
+    },
+    "categorie_02": {
+      "1": "Quels sont les tarifs préférentiels pour l'Internet?",
+      "2": "ما هي الأسعار التفضيلية للإنترنت؟",
+      "3": "Quels sont les forfaits de téléphonie disponibles?",
+      "4": "ما هي باقات الهاتف المتاحة؟"
+    },
+    "categorie_03": {
+      "1": "Comment puis-je bénéficier des tarifs préférentiels?",
+      "2": "كيف يمكنني الاستفادة من الأسعار التفضيلية؟",
+      "3": "Quels documents sont nécessaires pour une nouvelle demande?",
+      "4": "ما هي المستندات المطلوبة لطلب جديد؟"
+    },
+    "categorie_04": {
+      "1": "Quelles sont les vitesses Internet disponibles?",
+      "2": "ما هي سرعات الإنترنت المتاحة؟",
+      "3": "Quels sont les avantages de cette convention?",
+      "4": "ما هي مزايا هذه الاتفاقية؟"
+    }
+  }
+}
+
