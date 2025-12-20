@@ -8,7 +8,7 @@ from typing import Optional
 
 def get_mistral_api_key() -> Optional[str]:
     """Get Mistral API key"""
-    return "97ZQlsV45YrDusgZRwjArWGbh3nerFPb"
+    return "API_key"
 
 
 def get_deepseek_api_key() -> Optional[str]:
